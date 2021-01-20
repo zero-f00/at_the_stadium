@@ -13,4 +13,5 @@ target 'AtTheStadium' do
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
   pod 'SVProgressHUD'
+  pod 'CLImageEditor/AllTools'
 end

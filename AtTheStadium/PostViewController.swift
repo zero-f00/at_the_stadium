@@ -1,19 +1,18 @@
 //
-//  HomeViewController.swift
+//  PostViewController.swift
 //  AtTheStadium
 //
-//  Created by Yuto Masamura on 2021/01/20.
+//  Created by Yuto Masamura on 2021/01/21.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class PostViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-
     }
 
 }
