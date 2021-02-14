@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>画像投稿及び編集のため、マイクの使用許可を求めます。</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>画像投稿及び編集のため、マイクの使用許可を求めます。</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>画像投稿及び編集のため、写真への使用許可を求めます。</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
