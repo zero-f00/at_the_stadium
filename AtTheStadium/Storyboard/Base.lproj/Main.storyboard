@@ -370,6 +370,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAq-0f-Kx1">
                                         <rect key="frame" x="10" y="3" width="77" height="30"/>
                                         <state key="normal" title="試合を選択"/>
+                                        <connections>
+                                            <segue destination="aMC-Cz-9YY" kind="show" id="ouj-AR-wZX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -420,20 +423,92 @@
             </objects>
             <point key="canvasLocation" x="-300" y="1682"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="M2R-wx-VhU">
+        <!--Navigation Controller-->
+        <scene sceneID="MNj-ml-2Fz">
             <objects>
-                <viewController id="1nW-LP-F5C" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Asu-uf-PpY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <navigationController id="aMC-Cz-9YY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="iPh-6H-Bsi"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZOC-hO-5w2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mXg-lE-VVI" kind="show" id="cNV-Vo-gKL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ff-DX-Bex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436" y="1688"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aO0-9j-1yj">
+            <objects>
+                <viewController id="mXg-lE-VVI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qdL-rU-dmk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="JHq-Wz-4ZV"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="115-fF-mNz">
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
+                                <connections>
+                                    <segue destination="p48-Qd-XEt" kind="embed" id="6nQ-ib-Ybl"/>
+                                </connections>
+                            </containerView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="T6W-4n-Isr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nu-lP-2IU">
+                                <rect key="frame" x="10" y="758" width="394" height="40"/>
+                                <state key="normal" title="新しく試合を追加する" backgroundImage="btn"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Io-JV-Cub"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="T6W-4n-Isr" secondAttribute="trailing" id="6DT-ve-z0k"/>
+                            <constraint firstItem="T6W-4n-Isr" firstAttribute="leading" secondItem="7Io-JV-Cub" secondAttribute="leading" id="CW5-dL-REF"/>
+                            <constraint firstItem="7Io-JV-Cub" firstAttribute="bottom" secondItem="2Nu-lP-2IU" secondAttribute="bottom" constant="10" id="OBP-BW-DDI"/>
+                            <constraint firstItem="115-fF-mNz" firstAttribute="top" secondItem="T6W-4n-Isr" secondAttribute="bottom" id="aeV-FS-Les"/>
+                            <constraint firstItem="2Nu-lP-2IU" firstAttribute="leading" secondItem="7Io-JV-Cub" secondAttribute="leading" constant="10" id="dIX-lP-4H3"/>
+                            <constraint firstItem="7Io-JV-Cub" firstAttribute="bottom" secondItem="115-fF-mNz" secondAttribute="bottom" id="ejz-xz-9xp"/>
+                            <constraint firstItem="115-fF-mNz" firstAttribute="leading" secondItem="7Io-JV-Cub" secondAttribute="leading" id="fyB-nP-Mwr"/>
+                            <constraint firstItem="7Io-JV-Cub" firstAttribute="trailing" secondItem="2Nu-lP-2IU" secondAttribute="trailing" constant="10" id="gX9-YZ-eFi"/>
+                            <constraint firstItem="7Io-JV-Cub" firstAttribute="trailing" secondItem="115-fF-mNz" secondAttribute="trailing" id="uti-o5-SVv"/>
+                            <constraint firstItem="T6W-4n-Isr" firstAttribute="top" secondItem="7Io-JV-Cub" secondAttribute="top" id="xD6-V6-XCv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oX3-vf-Ses"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1i-ux-wt7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1246" y="1691"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Deh-hn-yH3">
+            <objects>
+                <viewController id="p48-Qd-XEt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M9A-oR-hAc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="752"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Apz-Ap-7VQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="752"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Apz-Ap-7VQ" secondAttribute="bottom" id="Knv-H5-aok"/>
+                            <constraint firstAttribute="trailing" secondItem="Apz-Ap-7VQ" secondAttribute="trailing" id="Pps-Tm-aYj"/>
+                            <constraint firstItem="Apz-Ap-7VQ" firstAttribute="top" secondItem="M9A-oR-hAc" secondAttribute="top" id="TyV-U5-ODw"/>
+                            <constraint firstItem="Apz-Ap-7VQ" firstAttribute="leading" secondItem="M9A-oR-hAc" secondAttribute="leading" id="qcP-XP-gqg"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="56y-pL-vZ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4DM-v0-Xew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="404" y="1681"/>
+            <point key="canvasLocation" x="2146" y="1740"/>
         </scene>
     </scenes>
     <resources>

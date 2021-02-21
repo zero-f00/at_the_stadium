@@ -126,6 +126,9 @@ class PostViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+    
+    
+    
 }
 
 extension PostViewController: UITextViewDelegate {
