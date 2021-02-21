@@ -14,6 +14,8 @@ target 'AtTheStadium' do
   pod 'FirebaseUI/Storage'
   pod 'SVProgressHUD'
   pod 'CLImageEditor/AllTools'
+  pod 'YPImagePicker'
+  pod 'UITextView+Placeholder'
 end
 
 post_install do |installer|

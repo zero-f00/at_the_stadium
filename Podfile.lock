@@ -303,10 +303,16 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - PryntTrimmerView (4.0.2)
   - SDWebImage (5.3.2):
     - SDWebImage/Core (= 5.3.2)
   - SDWebImage/Core (5.3.2)
+  - SteviaLayout (4.7.3)
   - SVProgressHUD (2.2.5)
+  - "UITextView+Placeholder (1.4.0)"
+  - YPImagePicker (4.4.0):
+    - PryntTrimmerView (~> 4.0.2)
+    - SteviaLayout (~> 4.7.3)
 
 DEPENDENCIES:
   - CLImageEditor/AllTools
@@ -317,6 +323,8 @@ DEPENDENCIES:
   - Firebase/Storage
   - FirebaseUI/Storage
   - SVProgressHUD
+  - "UITextView+Placeholder"
+  - YPImagePicker
 
 SPEC REPOS:
   trunk:
@@ -343,8 +351,12 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - PryntTrimmerView
     - SDWebImage
+    - SteviaLayout
     - SVProgressHUD
+    - "UITextView+Placeholder"
+    - YPImagePicker
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
@@ -370,9 +382,13 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
   SDWebImage: 6ac2eb96571bff96ecde31a987172c5934a0eb7d
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
+  YPImagePicker: 15aed8bcaa4dad976e11b6114126d731a2f9f3c9
 
-PODFILE CHECKSUM: e28385ccd72c341e1ebb5aef2af604872eb047d9
+PODFILE CHECKSUM: 4a775a19bb233846f53944bcace3c9bbb089bafc
 
 COCOAPODS: 1.10.1
