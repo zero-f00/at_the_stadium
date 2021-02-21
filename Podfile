@@ -15,6 +15,7 @@ target 'AtTheStadium' do
   pod 'SVProgressHUD'
   pod 'CLImageEditor/AllTools'
   pod 'YPImagePicker'
+  pod 'UITextView+Placeholder'
 end
 
 post_install do |installer|

@@ -309,6 +309,7 @@ PODS:
   - SDWebImage/Core (5.3.2)
   - SteviaLayout (4.7.3)
   - SVProgressHUD (2.2.5)
+  - "UITextView+Placeholder (1.4.0)"
   - YPImagePicker (4.4.0):
     - PryntTrimmerView (~> 4.0.2)
     - SteviaLayout (~> 4.7.3)
@@ -322,6 +323,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - FirebaseUI/Storage
   - SVProgressHUD
+  - "UITextView+Placeholder"
   - YPImagePicker
 
 SPEC REPOS:
@@ -353,6 +355,7 @@ SPEC REPOS:
     - SDWebImage
     - SteviaLayout
     - SVProgressHUD
+    - "UITextView+Placeholder"
     - YPImagePicker
 
 SPEC CHECKSUMS:
@@ -383,8 +386,9 @@ SPEC CHECKSUMS:
   SDWebImage: 6ac2eb96571bff96ecde31a987172c5934a0eb7d
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
   YPImagePicker: 15aed8bcaa4dad976e11b6114126d731a2f9f3c9
 
-PODFILE CHECKSUM: 5f7eb62100ebd589ec81b04e645b4c4c2b80f520
+PODFILE CHECKSUM: 4a775a19bb233846f53944bcace3c9bbb089bafc
 
 COCOAPODS: 1.10.1
