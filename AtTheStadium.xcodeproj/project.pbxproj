@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C9F257D6BE51ECC3322E7FE /* Pods_AtTheStadium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E7D75C4F4A033A4FCFE31B /* Pods_AtTheStadium.framework */; };
+		397EA4C5F3506FCA1E0DE9D4 /* Pods_AtTheStadium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F4B9A0259C7659D8B506BE /* Pods_AtTheStadium.framework */; };
+		581DF9FE25EBEF2500BE1B9C /* MatchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DF9FD25EBEF2500BE1B9C /* MatchData.swift */; };
+		581DFA0125EBEF9400BE1B9C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DFA0025EBEF9400BE1B9C /* Const.swift */; };
 		587EED3125B732E700C7DAA7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587EED3025B732E700C7DAA7 /* HomeViewController.swift */; };
 		587EED3425B8913F00C7DAA7 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587EED3325B8913F00C7DAA7 /* PostViewController.swift */; };
+		588061BB25FF9EE300CFFF8E /* NewMatchDataCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588061BA25FF9EE300CFFF8E /* NewMatchDataCreateViewController.swift */; };
+		5880F4222655702B000644F7 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880F4212655702B000644F7 /* MyPageViewController.swift */; };
 		588187DC25B5D71B006B5CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588187DB25B5D71B006B5CDF /* AppDelegate.swift */; };
 		588187DE25B5D71B006B5CDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588187DD25B5D71B006B5CDF /* SceneDelegate.swift */; };
 		588187E325B5D71B006B5CDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588187E125B5D71B006B5CDF /* Main.storyboard */; };
@@ -18,14 +22,42 @@
 		588187F225B5DF6C006B5CDF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588187F125B5DF6C006B5CDF /* LoginViewController.swift */; };
 		588187F525B5DFA6006B5CDF /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588187F425B5DFA6006B5CDF /* CreateViewController.swift */; };
 		588187FC25B5F3E2006B5CDF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 588187FB25B5F3E2006B5CDF /* GoogleService-Info.plist */; };
-		5883850C25CB063400A71927 /* BaseHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883850B25CB063400A71927 /* BaseHomeViewController.swift */; };
+		58896FA9260A5328005C6F08 /* SelectCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58896FA8260A5328005C6F08 /* SelectCategoryViewController.swift */; };
+		58896FB3260BA7BE005C6F08 /* CreateAwayTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58896FB2260BA7BE005C6F08 /* CreateAwayTeamViewController.swift */; };
+		58896FB7260BA7D3005C6F08 /* CreateStadiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58896FB6260BA7D3005C6F08 /* CreateStadiumViewController.swift */; };
+		58896FBE2610E0A1005C6F08 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58896FBD2610E0A1005C6F08 /* CategoryData.swift */; };
+		58896FC22610F205005C6F08 /* SelectCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58896FC02610F205005C6F08 /* SelectCategoryTableViewCell.swift */; };
+		58896FC32610F205005C6F08 /* SelectCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58896FC12610F205005C6F08 /* SelectCategoryTableViewCell.xib */; };
+		589F1708268B6DB300249B5C /* MatchDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F1707268B6DB300249B5C /* MatchDataViewController.swift */; };
+		589F170C268B711B00249B5C /* AddMatchDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F170A268B711B00249B5C /* AddMatchDataTableViewCell.swift */; };
+		589F170D268B711B00249B5C /* AddMatchDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589F170B268B711B00249B5C /* AddMatchDataTableViewCell.xib */; };
+		58AD10E2264AD722001D1A59 /* HomeTeamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD10E1264AD722001D1A59 /* HomeTeamData.swift */; };
+		58AD10E5264AD945001D1A59 /* CreateTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD10E4264AD945001D1A59 /* CreateTeamViewController.swift */; };
+		58AD10E8264ADBA9001D1A59 /* SelectHomeTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD10E7264ADBA9001D1A59 /* SelectHomeTeamViewController.swift */; };
+		58AD10F6264AE24A001D1A59 /* SelectHomeTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AD10F4264AE24A001D1A59 /* SelectHomeTeamTableViewCell.swift */; };
+		58AD10F7264AE24A001D1A59 /* SelectHomeTeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AD10F5264AE24A001D1A59 /* SelectHomeTeamTableViewCell.xib */; };
 		58BCBC4A25B729D400479589 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BCBC4925B729D400479589 /* TabBarController.swift */; };
+		58DEE99226136F19007B48B2 /* CreateCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DEE99126136F19007B48B2 /* CreateCategoryViewController.swift */; };
+		58DEE9BA261391ED007B48B2 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DEE9B9261391ED007B48B2 /* PostData.swift */; };
+		58DEE9BE261392AA007B48B2 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DEE9BC261392AA007B48B2 /* PostTableViewCell.swift */; };
+		58DEE9BF261392AA007B48B2 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DEE9BD261392AA007B48B2 /* PostTableViewCell.xib */; };
+		58DEE9C4262B2B47007B48B2 /* SectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DEE9C3262B2B47007B48B2 /* SectionData.swift */; };
+		58DEE9D1262B2C26007B48B2 /* CreateSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DEE9D0262B2C26007B48B2 /* CreateSectionViewController.swift */; };
+		58DEE9D6262B2C5A007B48B2 /* SelectSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DEE9D4262B2C5A007B48B2 /* SelectSectionTableViewCell.swift */; };
+		58DEE9D7262B2C5A007B48B2 /* SelectSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DEE9D5262B2C5A007B48B2 /* SelectSectionTableViewCell.xib */; };
+		58DEE9DB262B2C96007B48B2 /* SelectSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DEE9DA262B2C96007B48B2 /* SelectSectionViewController.swift */; };
+		58DEEDCD262C9E3D007B48B2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DEEDCC262C9E3D007B48B2 /* Date.swift */; };
+		58DEEDD1262C9E5C007B48B2 /* Data+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DEEDD0262C9E5C007B48B2 /* Data+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A42D8AB3161D3D33F2D61DE /* Pods-AtTheStadium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtTheStadium.debug.xcconfig"; path = "Target Support Files/Pods-AtTheStadium/Pods-AtTheStadium.debug.xcconfig"; sourceTree = "<group>"; };
+		47F4B9A0259C7659D8B506BE /* Pods_AtTheStadium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AtTheStadium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		581DF9FD25EBEF2500BE1B9C /* MatchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchData.swift; sourceTree = "<group>"; };
+		581DFA0025EBEF9400BE1B9C /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		587EED3025B732E700C7DAA7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		587EED3325B8913F00C7DAA7 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		588061BA25FF9EE300CFFF8E /* NewMatchDataCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMatchDataCreateViewController.swift; sourceTree = "<group>"; };
+		5880F4212655702B000644F7 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		588187D825B5D71B006B5CDF /* AtTheStadium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtTheStadium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588187DB25B5D71B006B5CDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		588187DD25B5D71B006B5CDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,10 +68,34 @@
 		588187F125B5DF6C006B5CDF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		588187F425B5DFA6006B5CDF /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		588187FB25B5F3E2006B5CDF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5883850B25CB063400A71927 /* BaseHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHomeViewController.swift; sourceTree = "<group>"; };
+		58896FA8260A5328005C6F08 /* SelectCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryViewController.swift; sourceTree = "<group>"; };
+		58896FB2260BA7BE005C6F08 /* CreateAwayTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAwayTeamViewController.swift; sourceTree = "<group>"; };
+		58896FB6260BA7D3005C6F08 /* CreateStadiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStadiumViewController.swift; sourceTree = "<group>"; };
+		58896FBD2610E0A1005C6F08 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
+		58896FC02610F205005C6F08 /* SelectCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		58896FC12610F205005C6F08 /* SelectCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		589F1707268B6DB300249B5C /* MatchDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDataViewController.swift; sourceTree = "<group>"; };
+		589F170A268B711B00249B5C /* AddMatchDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMatchDataTableViewCell.swift; sourceTree = "<group>"; };
+		589F170B268B711B00249B5C /* AddMatchDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddMatchDataTableViewCell.xib; sourceTree = "<group>"; };
+		58AD10E1264AD722001D1A59 /* HomeTeamData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTeamData.swift; sourceTree = "<group>"; };
+		58AD10E4264AD945001D1A59 /* CreateTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTeamViewController.swift; sourceTree = "<group>"; };
+		58AD10E7264ADBA9001D1A59 /* SelectHomeTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHomeTeamViewController.swift; sourceTree = "<group>"; };
+		58AD10F4264AE24A001D1A59 /* SelectHomeTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHomeTeamTableViewCell.swift; sourceTree = "<group>"; };
+		58AD10F5264AE24A001D1A59 /* SelectHomeTeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectHomeTeamTableViewCell.xib; sourceTree = "<group>"; };
 		58BCBC4925B729D400479589 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		74E7D75C4F4A033A4FCFE31B /* Pods_AtTheStadium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AtTheStadium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88251849D184EFE8CE039350 /* Pods-AtTheStadium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtTheStadium.release.xcconfig"; path = "Target Support Files/Pods-AtTheStadium/Pods-AtTheStadium.release.xcconfig"; sourceTree = "<group>"; };
+		58DEE99126136F19007B48B2 /* CreateCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategoryViewController.swift; sourceTree = "<group>"; };
+		58DEE9B9261391ED007B48B2 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		58DEE9BC261392AA007B48B2 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		58DEE9BD261392AA007B48B2 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		58DEE9C3262B2B47007B48B2 /* SectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionData.swift; sourceTree = "<group>"; };
+		58DEE9D0262B2C26007B48B2 /* CreateSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSectionViewController.swift; sourceTree = "<group>"; };
+		58DEE9D4262B2C5A007B48B2 /* SelectSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSectionTableViewCell.swift; sourceTree = "<group>"; };
+		58DEE9D5262B2C5A007B48B2 /* SelectSectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectSectionTableViewCell.xib; sourceTree = "<group>"; };
+		58DEE9DA262B2C96007B48B2 /* SelectSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSectionViewController.swift; sourceTree = "<group>"; };
+		58DEEDCC262C9E3D007B48B2 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		58DEEDD0262C9E5C007B48B2 /* Data+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Ex.swift"; sourceTree = "<group>"; };
+		8F5179C90444FB5DAA65CA1E /* Pods-AtTheStadium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtTheStadium.debug.xcconfig"; path = "Target Support Files/Pods-AtTheStadium/Pods-AtTheStadium.debug.xcconfig"; sourceTree = "<group>"; };
+		C8B4C11EF09D670D9E3DCCBC /* Pods-AtTheStadium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtTheStadium.release.xcconfig"; path = "Target Support Files/Pods-AtTheStadium/Pods-AtTheStadium.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,13 +103,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C9F257D6BE51ECC3322E7FE /* Pods_AtTheStadium.framework in Frameworks */,
+				397EA4C5F3506FCA1E0DE9D4 /* Pods_AtTheStadium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		555F29A6D5F54A11ECFE2F2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47F4B9A0259C7659D8B506BE /* Pods_AtTheStadium.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		587EED5225B899D600C7DAA7 /* Login_CreateUser */ = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +127,32 @@
 			path = Login_CreateUser;
 			sourceTree = "<group>";
 		};
+		588061B925FF9E0700CFFF8E /* AddMatchData */ = {
+			isa = PBXGroup;
+			children = (
+				588061BA25FF9EE300CFFF8E /* NewMatchDataCreateViewController.swift */,
+				58896FA6260A4EFC005C6F08 /* CreateMatchDataOptions */,
+			);
+			name = AddMatchData;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5880F42026556FDA000644F7 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				5880F4212655702B000644F7 /* MyPageViewController.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 		588187CF25B5D71B006B5CDF = {
 			isa = PBXGroup;
 			children = (
+				588187E425B5D71D006B5CDF /* Assets.xcassets */,
 				588187DA25B5D71B006B5CDF /* AtTheStadium */,
 				588187D925B5D71B006B5CDF /* Products */,
 				FAD929A14E24DF9DDF7F8FBA /* Pods */,
-				5E6C3C8CE4E693611C03E67E /* Frameworks */,
+				555F29A6D5F54A11ECFE2F2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,16 +167,86 @@
 		588187DA25B5D71B006B5CDF /* AtTheStadium */ = {
 			isa = PBXGroup;
 			children = (
+				58DEEDCB262C9E22007B48B2 /* Extension */,
+				581DFA0025EBEF9400BE1B9C /* Const.swift */,
 				58EB9A8425BDAB2A00D55EA3 /* Storyboard */,
 				587EED5225B899D600C7DAA7 /* Login_CreateUser */,
 				58EB9A8625BDAB6D00D55EA3 /* Post */,
 				58EB9A8725BDAB7900D55EA3 /* Home */,
-				588187E425B5D71D006B5CDF /* Assets.xcassets */,
+				5880F42026556FDA000644F7 /* MyPage */,
 				58EB9A8525BDAB3E00D55EA3 /* TabBar */,
 				58EB9A8325BDAB1C00D55EA3 /* plist */,
 				58EB9A8225BDAAFB00D55EA3 /* Delegate */,
 			);
 			path = AtTheStadium;
+			sourceTree = "<group>";
+		};
+		58896FA6260A4EFC005C6F08 /* CreateMatchDataOptions */ = {
+			isa = PBXGroup;
+			children = (
+				58896FC52610F372005C6F08 /* Category */,
+				58DEE9C2262B2B11007B48B2 /* Section */,
+				58896FB2260BA7BE005C6F08 /* CreateAwayTeamViewController.swift */,
+				58896FB6260BA7D3005C6F08 /* CreateStadiumViewController.swift */,
+				58DEE9D3262B2C2C007B48B2 /* HomeTeam */,
+			);
+			name = CreateMatchDataOptions;
+			sourceTree = "<group>";
+		};
+		58896FC52610F372005C6F08 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				58896FBD2610E0A1005C6F08 /* CategoryData.swift */,
+				58DEE99126136F19007B48B2 /* CreateCategoryViewController.swift */,
+				58896FA8260A5328005C6F08 /* SelectCategoryViewController.swift */,
+				58896FC02610F205005C6F08 /* SelectCategoryTableViewCell.swift */,
+				58896FC12610F205005C6F08 /* SelectCategoryTableViewCell.xib */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		589F16FF268B6CC500249B5C /* MatchData */ = {
+			isa = PBXGroup;
+			children = (
+				589F1707268B6DB300249B5C /* MatchDataViewController.swift */,
+				589F170A268B711B00249B5C /* AddMatchDataTableViewCell.swift */,
+				589F170B268B711B00249B5C /* AddMatchDataTableViewCell.xib */,
+				588061B925FF9E0700CFFF8E /* AddMatchData */,
+			);
+			path = MatchData;
+			sourceTree = "<group>";
+		};
+		58DEE9C2262B2B11007B48B2 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				58DEE9C3262B2B47007B48B2 /* SectionData.swift */,
+				58DEE9D0262B2C26007B48B2 /* CreateSectionViewController.swift */,
+				58DEE9DA262B2C96007B48B2 /* SelectSectionViewController.swift */,
+				58DEE9D4262B2C5A007B48B2 /* SelectSectionTableViewCell.swift */,
+				58DEE9D5262B2C5A007B48B2 /* SelectSectionTableViewCell.xib */,
+			);
+			name = Section;
+			sourceTree = "<group>";
+		};
+		58DEE9D3262B2C2C007B48B2 /* HomeTeam */ = {
+			isa = PBXGroup;
+			children = (
+				58AD10E1264AD722001D1A59 /* HomeTeamData.swift */,
+				58AD10E4264AD945001D1A59 /* CreateTeamViewController.swift */,
+				58AD10E7264ADBA9001D1A59 /* SelectHomeTeamViewController.swift */,
+				58AD10F4264AE24A001D1A59 /* SelectHomeTeamTableViewCell.swift */,
+				58AD10F5264AE24A001D1A59 /* SelectHomeTeamTableViewCell.xib */,
+			);
+			name = HomeTeam;
+			sourceTree = "<group>";
+		};
+		58DEEDCB262C9E22007B48B2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				58DEEDCC262C9E3D007B48B2 /* Date.swift */,
+				58DEEDD0262C9E5C007B48B2 /* Data+Ex.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		58EB9A8225BDAAFB00D55EA3 /* Delegate */ = {
@@ -134,7 +287,13 @@
 		58EB9A8625BDAB6D00D55EA3 /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				58DEE9B9261391ED007B48B2 /* PostData.swift */,
+				581DF9FD25EBEF2500BE1B9C /* MatchData.swift */,
 				587EED3325B8913F00C7DAA7 /* PostViewController.swift */,
+				587EED3025B732E700C7DAA7 /* HomeViewController.swift */,
+				58DEE9BC261392AA007B48B2 /* PostTableViewCell.swift */,
+				58DEE9BD261392AA007B48B2 /* PostTableViewCell.xib */,
+				589F16FF268B6CC500249B5C /* MatchData */,
 			);
 			name = Post;
 			sourceTree = "<group>";
@@ -142,25 +301,15 @@
 		58EB9A8725BDAB7900D55EA3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				587EED3025B732E700C7DAA7 /* HomeViewController.swift */,
-				5883850B25CB063400A71927 /* BaseHomeViewController.swift */,
 			);
 			name = Home;
-			sourceTree = "<group>";
-		};
-		5E6C3C8CE4E693611C03E67E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				74E7D75C4F4A033A4FCFE31B /* Pods_AtTheStadium.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FAD929A14E24DF9DDF7F8FBA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1A42D8AB3161D3D33F2D61DE /* Pods-AtTheStadium.debug.xcconfig */,
-				88251849D184EFE8CE039350 /* Pods-AtTheStadium.release.xcconfig */,
+				8F5179C90444FB5DAA65CA1E /* Pods-AtTheStadium.debug.xcconfig */,
+				C8B4C11EF09D670D9E3DCCBC /* Pods-AtTheStadium.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -172,11 +321,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 588187EC25B5D71D006B5CDF /* Build configuration list for PBXNativeTarget "AtTheStadium" */;
 			buildPhases = (
-				69E25B45F5B37A512D8B5305 /* [CP] Check Pods Manifest.lock */,
+				4438076774102722F88DF4A3 /* [CP] Check Pods Manifest.lock */,
 				588187D425B5D71B006B5CDF /* Sources */,
 				588187D525B5D71B006B5CDF /* Frameworks */,
 				588187D625B5D71B006B5CDF /* Resources */,
-				D9CE4278ACA79CF9F79ABE05 /* [CP] Embed Pods Frameworks */,
+				65CBBFD30A1116338723999E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,9 +373,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58DEE9D7262B2C5A007B48B2 /* SelectSectionTableViewCell.xib in Resources */,
 				588187E825B5D71D006B5CDF /* LaunchScreen.storyboard in Resources */,
 				588187FC25B5F3E2006B5CDF /* GoogleService-Info.plist in Resources */,
+				58AD10F7264AE24A001D1A59 /* SelectHomeTeamTableViewCell.xib in Resources */,
+				589F170D268B711B00249B5C /* AddMatchDataTableViewCell.xib in Resources */,
 				588187E525B5D71D006B5CDF /* Assets.xcassets in Resources */,
+				58DEE9BF261392AA007B48B2 /* PostTableViewCell.xib in Resources */,
+				58896FC32610F205005C6F08 /* SelectCategoryTableViewCell.xib in Resources */,
 				588187E325B5D71B006B5CDF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,7 +388,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		69E25B45F5B37A512D8B5305 /* [CP] Check Pods Manifest.lock */ = {
+		4438076774102722F88DF4A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,7 +410,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D9CE4278ACA79CF9F79ABE05 /* [CP] Embed Pods Frameworks */ = {
+		65CBBFD30A1116338723999E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,12 +435,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				587EED3425B8913F00C7DAA7 /* PostViewController.swift in Sources */,
+				58DEE9D1262B2C26007B48B2 /* CreateSectionViewController.swift in Sources */,
+				589F1708268B6DB300249B5C /* MatchDataViewController.swift in Sources */,
+				581DF9FE25EBEF2500BE1B9C /* MatchData.swift in Sources */,
 				588187F525B5DFA6006B5CDF /* CreateViewController.swift in Sources */,
-				5883850C25CB063400A71927 /* BaseHomeViewController.swift in Sources */,
+				58AD10E8264ADBA9001D1A59 /* SelectHomeTeamViewController.swift in Sources */,
+				581DFA0125EBEF9400BE1B9C /* Const.swift in Sources */,
+				58AD10E2264AD722001D1A59 /* HomeTeamData.swift in Sources */,
+				58DEE9C4262B2B47007B48B2 /* SectionData.swift in Sources */,
+				58896FBE2610E0A1005C6F08 /* CategoryData.swift in Sources */,
+				58DEE99226136F19007B48B2 /* CreateCategoryViewController.swift in Sources */,
+				58DEE9D6262B2C5A007B48B2 /* SelectSectionTableViewCell.swift in Sources */,
+				58DEE9BE261392AA007B48B2 /* PostTableViewCell.swift in Sources */,
+				589F170C268B711B00249B5C /* AddMatchDataTableViewCell.swift in Sources */,
+				58DEE9BA261391ED007B48B2 /* PostData.swift in Sources */,
+				58896FB3260BA7BE005C6F08 /* CreateAwayTeamViewController.swift in Sources */,
 				588187F225B5DF6C006B5CDF /* LoginViewController.swift in Sources */,
+				58896FA9260A5328005C6F08 /* SelectCategoryViewController.swift in Sources */,
+				58896FC22610F205005C6F08 /* SelectCategoryTableViewCell.swift in Sources */,
 				58BCBC4A25B729D400479589 /* TabBarController.swift in Sources */,
+				5880F4222655702B000644F7 /* MyPageViewController.swift in Sources */,
+				58896FB7260BA7D3005C6F08 /* CreateStadiumViewController.swift in Sources */,
 				588187DC25B5D71B006B5CDF /* AppDelegate.swift in Sources */,
+				58AD10F6264AE24A001D1A59 /* SelectHomeTeamTableViewCell.swift in Sources */,
 				587EED3125B732E700C7DAA7 /* HomeViewController.swift in Sources */,
+				58DEEDD1262C9E5C007B48B2 /* Data+Ex.swift in Sources */,
+				58DEEDCD262C9E3D007B48B2 /* Date.swift in Sources */,
+				58AD10E5264AD945001D1A59 /* CreateTeamViewController.swift in Sources */,
+				588061BB25FF9EE300CFFF8E /* NewMatchDataCreateViewController.swift in Sources */,
+				58DEE9DB262B2C96007B48B2 /* SelectSectionViewController.swift in Sources */,
 				588187DE25B5D71B006B5CDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +608,7 @@
 		};
 		588187ED25B5D71D006B5CDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A42D8AB3161D3D33F2D61DE /* Pods-AtTheStadium.debug.xcconfig */;
+			baseConfigurationReference = 8F5179C90444FB5DAA65CA1E /* Pods-AtTheStadium.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,7 +629,7 @@
 		};
 		588187EE25B5D71D006B5CDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88251849D184EFE8CE039350 /* Pods-AtTheStadium.release.xcconfig */;
+			baseConfigurationReference = C8B4C11EF09D670D9E3DCCBC /* Pods-AtTheStadium.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
