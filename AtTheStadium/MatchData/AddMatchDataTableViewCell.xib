@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="244" id="KGk-i7-Jjw" customClass="AddMatchDataTableViewCell" customModule="AtTheStadium" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="245.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="245.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第1節" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr5-Fc-0ii">
+                        <rect key="frame" x="15" y="70" width="290" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="厚別競技場" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zb4-9Z-kcO">
+                        <rect key="frame" x="31" y="203.5" width="258" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KICKOFF - 2020/6/20（土）19:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqs-X1-ZuH">
+                        <rect key="frame" x="15" y="10" width="290" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浦和レッドダイヤモンズ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1I-qs-3ZR">
+                        <rect key="frame" x="31" y="167.5" width="258" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北海道コンサドーレ札幌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uba-e0-t6n">
+                        <rect key="frame" x="15" y="106" width="290" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XT3-2b-Iuq">
+                        <rect key="frame" x="15" y="136.5" width="290" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="明治安田生命J1リーグ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y85-uu-9BL">
+                        <rect key="frame" x="15" y="41" width="290" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="y85-uu-9BL" secondAttribute="trailing" constant="15" id="5RC-wb-ave"/>
+                    <constraint firstItem="uba-e0-t6n" firstAttribute="top" secondItem="zr5-Fc-0ii" secondAttribute="bottom" constant="15" id="8i0-O1-bPJ"/>
+                    <constraint firstItem="Oqs-X1-ZuH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="E1h-3B-naW"/>
+                    <constraint firstItem="u1I-qs-3ZR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="GHi-Ms-YzZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="u1I-qs-3ZR" secondAttribute="trailing" constant="15" id="JFo-0Z-Dy8"/>
+                    <constraint firstAttribute="trailing" secondItem="Oqs-X1-ZuH" secondAttribute="trailing" constant="15" id="KRl-vo-U7Q"/>
+                    <constraint firstAttribute="trailing" secondItem="uba-e0-t6n" secondAttribute="trailing" constant="15" id="LKP-Tk-0Bu"/>
+                    <constraint firstAttribute="trailing" secondItem="XT3-2b-Iuq" secondAttribute="trailing" constant="15" id="LlM-XQ-ijf"/>
+                    <constraint firstItem="XT3-2b-Iuq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Nd6-bh-FMi"/>
+                    <constraint firstItem="Zb4-9Z-kcO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="OGq-e2-YOV"/>
+                    <constraint firstItem="zr5-Fc-0ii" firstAttribute="top" secondItem="y85-uu-9BL" secondAttribute="bottom" constant="8" id="OsQ-Hq-wvw"/>
+                    <constraint firstAttribute="trailing" secondItem="zr5-Fc-0ii" secondAttribute="trailing" constant="15" id="PLJ-AA-UyW"/>
+                    <constraint firstItem="Oqs-X1-ZuH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Sa2-au-2Gc"/>
+                    <constraint firstItem="y85-uu-9BL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="W8B-CE-TjS"/>
+                    <constraint firstItem="zr5-Fc-0ii" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="b5m-Kz-eEC"/>
+                    <constraint firstItem="u1I-qs-3ZR" firstAttribute="top" secondItem="XT3-2b-Iuq" secondAttribute="bottom" constant="10" id="bS6-kg-Kbz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Zb4-9Z-kcO" secondAttribute="trailing" constant="15" id="dlJ-vD-zMg"/>
+                    <constraint firstItem="Zb4-9Z-kcO" firstAttribute="top" secondItem="u1I-qs-3ZR" secondAttribute="bottom" constant="15" id="gQ3-69-ZN6"/>
+                    <constraint firstItem="uba-e0-t6n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="i6Z-ch-OTX"/>
+                    <constraint firstItem="XT3-2b-Iuq" firstAttribute="top" secondItem="uba-e0-t6n" secondAttribute="bottom" constant="10" id="pq3-Qj-8LJ"/>
+                    <constraint firstItem="y85-uu-9BL" firstAttribute="top" secondItem="Oqs-X1-ZuH" secondAttribute="bottom" constant="10" id="tzJ-TY-fGx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Zb4-9Z-kcO" secondAttribute="bottom" constant="10" id="uwW-I0-Oes"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="awayTeamLabel" destination="u1I-qs-3ZR" id="Ot9-ej-rL8"/>
+                <outlet property="categoryLabel" destination="y85-uu-9BL" id="jLE-i3-nkb"/>
+                <outlet property="dateLabel" destination="Oqs-X1-ZuH" id="lEL-zd-30n"/>
+                <outlet property="homeTeamLabel" destination="uba-e0-t6n" id="495-w3-uZu"/>
+                <outlet property="sectionLabel" destination="zr5-Fc-0ii" id="fNk-Q2-KeB"/>
+                <outlet property="stadiumLabel" destination="Zb4-9Z-kcO" id="gFT-8j-8CV"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="198.54910714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

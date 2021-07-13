@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 import UITextView_Placeholder
 
 class PostViewController: UIViewController {
@@ -19,10 +21,14 @@ class PostViewController: UIViewController {
     
     @IBOutlet weak var keyboardBackView: UIView!
     
+    @IBOutlet weak var postButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.textView.delegate = self
+        postButton.isEnabled = false
+        
+        textView.delegate = self
         
         if textView.text.isEmpty {
             self.wordCountLabel.text = "300/300"
@@ -120,15 +126,34 @@ class PostViewController: UIViewController {
         }
     }
     
+    @IBAction func postButton(_ sender: Any) {
+        textView.resignFirstResponder()
+        
+        let postRef = Firestore.firestore().collection(Const.PostPath).document()
+        
+        SVProgressHUD.show()
+        
+        let name = Auth.auth().currentUser?.displayName
+        let uid = Auth.auth().currentUser?.uid
+        let postDic = [
+            "uid": uid!,
+            "name": name!,
+            "caption": self.textView.text!,
+            "date": FieldValue.serverTimestamp(),
+            //"matchInfoId": self.matchInfo!.id
+        ] as [String : Any]
+        postRef.setData(postDic)
+        
+        SVProgressHUD.showSuccess(withStatus: "投稿完了")
+        
+        UIApplication.shared.windows.first{ $0.isKeyWindow }?.rootViewController?.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-    
-    
-    
-    
 }
 
 extension PostViewController: UITextViewDelegate {
@@ -144,6 +169,15 @@ extension PostViewController: UITextViewDelegate {
         let existingLines = textView.text.components(separatedBy: .newlines) // すでに存在する改行数
         if existingLines.count <= 300 {
             self.wordCountLabel.text = "\(maxWordCount - textView.text.count)/300"
+            
+            print("DEBUG_PRINT: 文字 \(String(describing: self.wordCountLabel.text))")
+            print("DEBUG_PRINT: 改行中は何が入ってる \(String(describing: self.textView.text))")
+            
+            if self.wordCountLabel.text! == "300/300" {
+                postButton.isEnabled = false
+            } else {
+                postButton.isEnabled = true
+            }
         }
     }
 }
